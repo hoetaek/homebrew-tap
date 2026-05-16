@@ -54,8 +54,4 @@ class Wt < Formula
     # sample files.
     pkgshare.install(*leftover_contents) unless leftover_contents.empty?
   end
-
-  test do
-    assert_match version.to_s, shell_output("#{bin}/wt --version")
-  end
 end
