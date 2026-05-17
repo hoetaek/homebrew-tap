@@ -1,20 +1,20 @@
 class Wt < Formula
   desc "Git worktree workspace manager"
   homepage "https://github.com/hoetaek/wt"
-  version "0.26.0"
+  version "0.26.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hoetaek/wt/releases/download/v0.26.0/wt-aarch64-apple-darwin.tar.xz"
-      sha256 "8ba9af8afc7f9a53332271e405f3106cfa0b465b91458babf37998bf17f5394c"
+      url "https://github.com/hoetaek/wt/releases/download/v0.26.1/wt-aarch64-apple-darwin.tar.xz"
+      sha256 "5edb96a387923bf5d1f9fe291805b2501d64df1181826c8491a9d2d974509fa6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoetaek/wt/releases/download/v0.26.0/wt-x86_64-apple-darwin.tar.xz"
-      sha256 "a2fc59fe7ce5610d8e75a5da73655dd296e48ea23290c1ab955aa7f5593f2d46"
+      url "https://github.com/hoetaek/wt/releases/download/v0.26.1/wt-x86_64-apple-darwin.tar.xz"
+      sha256 "0edd3aca089d05f1d7aacd22e060db67cc31f8548545be8ca7f6883844a2993b"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hoetaek/wt/releases/download/v0.26.0/wt-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "9e0d76fe13548d8c63692e6703b8350267b1cd4e8d3f1466610d3147451fbf67"
+    url "https://github.com/hoetaek/wt/releases/download/v0.26.1/wt-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "14643f38d2ea42fbc78f4f9ed25f269cda5312870cc8937df1260630cb0e66e0"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
