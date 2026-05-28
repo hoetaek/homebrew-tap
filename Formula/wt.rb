@@ -1,20 +1,20 @@
 class Wt < Formula
   desc "Worktree-based agent orchestration harness"
   homepage "https://github.com/hoetaek/wt"
-  version "0.42.0"
+  version "0.43.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hoetaek/wt/releases/download/v0.42.0/wt-aarch64-apple-darwin.tar.xz"
-      sha256 "71327e473f445c97c64760456bcf9f070ff4f2add6fb7fd14a4946bfacf934b3"
+      url "https://github.com/hoetaek/wt/releases/download/v0.43.0/wt-aarch64-apple-darwin.tar.xz"
+      sha256 "23f908b8976b4288ec64607f865c2d37b8db088b815f05fed1956d46a4ee6376"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoetaek/wt/releases/download/v0.42.0/wt-x86_64-apple-darwin.tar.xz"
-      sha256 "8c23b4f8bd9d571e5427a30b8162dd64632ba58d0d1467072a1725b62477a30b"
+      url "https://github.com/hoetaek/wt/releases/download/v0.43.0/wt-x86_64-apple-darwin.tar.xz"
+      sha256 "ab887046c58fc4a34a1d8765355baef2138cdc3e95a405bc080eab527d661cb0"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hoetaek/wt/releases/download/v0.42.0/wt-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "6ee0e3fdc333e2248123971c902e19cdb59c7b1529b441e58bfafdb35f79a6e3"
+    url "https://github.com/hoetaek/wt/releases/download/v0.43.0/wt-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "880d75863448f2335fac5e9f15f38ec1efe920d93f770d02db5217d701653481"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
