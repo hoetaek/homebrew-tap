@@ -1,20 +1,20 @@
 class Leaf < Formula
   desc "Domain-neutral human-agent collaboration CLI"
   homepage "https://github.com/hoetaek/leaf"
-  version "0.6.0"
+  version "0.6.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hoetaek/leaf/releases/download/v0.6.0/leaf-aarch64-apple-darwin.tar.xz"
-      sha256 "aa83febc4aa0a99aab6ebc52501386380d2fabaafc6935ceb2d76564d044e536"
+      url "https://github.com/hoetaek/leaf/releases/download/v0.6.1/leaf-aarch64-apple-darwin.tar.xz"
+      sha256 "c2f71c60bcefdae2d94672e0de1be4b7bbdc18615cc6b65acb3b8a6c75e33951"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hoetaek/leaf/releases/download/v0.6.0/leaf-x86_64-apple-darwin.tar.xz"
-      sha256 "041186e8cb42b4d0cf44573cae8ef8c9e0791a66e612f4dd07fe30cd82ad1223"
+      url "https://github.com/hoetaek/leaf/releases/download/v0.6.1/leaf-x86_64-apple-darwin.tar.xz"
+      sha256 "da5f242a476cc575cac2a009329fae45356d0dae31886664a5e73e9db70afecd"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/hoetaek/leaf/releases/download/v0.6.0/leaf-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "ac4f271b9e46ebd6cbb7dec5e15c95884d766772f96df77ea95b33f90c00436a"
+    url "https://github.com/hoetaek/leaf/releases/download/v0.6.1/leaf-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "dd4cdd9bb6a31d318ea97d07a83442470de7cd2296f22dda64a47d882c14638f"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
